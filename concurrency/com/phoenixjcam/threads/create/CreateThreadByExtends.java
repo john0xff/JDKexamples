@@ -1,16 +1,22 @@
 package com.phoenixjcam.threads.create;
 
-class RunnableDemo implements Runnable
+/**
+ * http://www.tutorialspoint.com/java/java_multithreading.htm
+ * @author Bart88
+ *
+ */
+class ThreadDemo extends Thread
 {
 	private Thread t;
 	private String threadName;
 
-	RunnableDemo(String name)
+	ThreadDemo(String name)
 	{
 		threadName = name;
 		System.out.println("Creating " + threadName);
 	}
 
+	@Override
 	public void run()
 	{
 		System.out.println("Running " + threadName);
@@ -42,15 +48,15 @@ class RunnableDemo implements Runnable
 
 }
 
-public class TestThreadRunnable
+public class CreateThreadByExtends
 {
 	public static void main(String args[])
 	{
 
-		RunnableDemo R1 = new RunnableDemo("Thread-1");
-		R1.start();
+		ThreadDemo T1 = new ThreadDemo("Thread-1");
+		T1.start();
 
-		RunnableDemo R2 = new RunnableDemo("Thread-2");
-		R2.start();
+		ThreadDemo T2 = new ThreadDemo("Thread-2");
+		T2.start();
 	}
 }
