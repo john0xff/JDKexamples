@@ -1,4 +1,4 @@
-package com.phoenixjcam.threads.create;
+package com.phoenixjcam.threads.create.practice;
 
 public class CreateThreadByExtends2
 {

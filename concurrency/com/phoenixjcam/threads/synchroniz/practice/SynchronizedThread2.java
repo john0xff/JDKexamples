@@ -1,6 +1,6 @@
-package com.phoenixjcam.threads.synchroniz;
+package com.phoenixjcam.threads.synchroniz.practice;
 
-class UnsynchPrinter
+class Printer
 {
 	public void printText(String threadName)
 	{
@@ -9,7 +9,7 @@ class UnsynchPrinter
 			for (int i = 0; i < 5; i++)
 			{
 				System.out.println(threadName + " " + i);
-				Thread.sleep(1000);
+				//Thread.sleep(100);
 			}
 		}
 		catch (Exception e)
@@ -20,16 +20,19 @@ class UnsynchPrinter
 	}
 }
 
-class UnsynchThreadFact
+class ThreadFact
 {
 	private Thread thread;
 
-	public UnsynchThreadFact(String threadName, Printer printer)
+	public ThreadFact(String threadName, Printer printer)
 	{
 		thread = new Thread(() ->
 		{
-			printer.printText(threadName);
-			
+			 synchronized(printer)
+			 {
+				 printer.printText(threadName);
+			 }
+
 		}, threadName);
 	}
 
@@ -39,13 +42,13 @@ class UnsynchThreadFact
 	}
 }
 
-public class UnsynchronizedThread2
+public class SynchronizedThread2
 {
 	public static void main(String[] args)
 	{
 		Printer printer = new Printer();
 		
-		new UnsynchThreadFact("king", printer).getThread().start();
-		new UnsynchThreadFact("master", printer).getThread().start();
+		new ThreadFact("king", printer).getThread().start();
+		new ThreadFact("master", printer).getThread().start();
 	}
 }

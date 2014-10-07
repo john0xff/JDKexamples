@@ -1,4 +1,4 @@
-package com.phoenixjcam.threads.synchroniz;
+package com.phoenixjcam.threads.synchroniz.practice;
 
 class ThreadFactory
 {
