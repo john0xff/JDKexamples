@@ -1,5 +1,14 @@
 package valueAndRef;
 
+/**
+ * http://stackoverflow.com/questions/40480/is-java-pass-by-reference-or-pass-by-value
+ * 
+ * 
+ * 
+ * 
+ * @author BartBien
+ *
+ */
 class Dog
 {
 	String dogsName;
@@ -65,10 +74,36 @@ public class ValueAndReference
 		boolean equalsMax2 = aDog.getName().equals("Fifi");
 	}
 
+	public static void addSometing(int a)
+	{
+		a += 10;
+
+		System.out.println(a);
+	}
+
+	public static int addSometing2(int a)
+	{
+		a += 10;
+
+		System.out.println(a);
+
+		return a;
+	}
+
 	public static void main(String[] args)
 	{
-		//fooTest();
-		foo2Test();
+		// fooTest(); // true everywhere
+
+		// foo2Test(); // difference - false
+
+		// int a = 10;
+		// addSometing(a);
+		// System.out.println(a);
+
+		// int a = 10;
+		// addSometing(a);
+		// System.out.println(addSometing2(a));
+		// System.out.println(a);
 	}
 
 }
