@@ -39,7 +39,10 @@ public class Bitwise
 		//c = 4 >> 2; // 0000 0001
 		
 		//c = a >>> 1;
-		c = a >>> 4;
-		System.out.println("c = a & b; " + c);
+		//c = a >>> 4;
+		
+		c = 128;
+		c = 128 >> 1; // 1000 0000
+		System.out.println(c);
 	}
 }
