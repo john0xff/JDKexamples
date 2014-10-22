@@ -1,4 +1,4 @@
-package mkyoung;
+package mkyoung.validator;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -28,6 +28,18 @@ public class UsernameValidator
 
 		matcher = pattern.matcher(username);
 		return matcher.matches();
+	}
 
+	public static void main(String... args)
+	{
+		if (args.length > 0)
+		{
+			if (new UsernameValidator().validate(args[0]))
+				System.out.println("Valid -> " + args[0]);
+			else
+				System.out.println("Invalid -> " + args[0]);
+		}
+		else
+			System.out.println("Give an argument at the begining");
 	}
 }

@@ -1,4 +1,4 @@
-package mkyoung;
+package mkyoung.validator;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
