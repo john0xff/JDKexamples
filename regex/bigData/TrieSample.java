@@ -34,7 +34,7 @@ public class TrieSample
 		for (int i = 0; i < strings.length; i++)
 		{
 			
-			
+			treeMap.values();
 			
 //			if (strings[i] == treeMap.get("john"))
 //			{
