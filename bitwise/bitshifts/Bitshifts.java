@@ -1,4 +1,4 @@
-package bitwise;
+package bitshifts;
 
 public class Bitshifts
 {
@@ -13,7 +13,9 @@ public class Bitshifts
 		System.out.println(16 >>> 4);
 
 		System.out.println(10 >>> 2); // 0000 1010 -> 0000 0101 = 10 -> 5
-		System.out.println(10 >> 2); 
+		System.out.println(10 >> 2);
+		
+		System.out.println(10 >> 2); // 0010 0000 
 		
 	}
 }
