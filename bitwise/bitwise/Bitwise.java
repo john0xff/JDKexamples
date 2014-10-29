@@ -1,3 +1,4 @@
+package bitwise;
 public class Bitwise
 {
 
