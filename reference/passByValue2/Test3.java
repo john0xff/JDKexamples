@@ -34,7 +34,7 @@ public class Test3
 	{
 		// ---------- test1
 		Dog dog = new Dog("Max"); // test3.Dog@3b95a09c
-		
+		System.out.println(dog.hashCode());
 		System.out.println(dog.getName());
 		
 		changeName(dog);
