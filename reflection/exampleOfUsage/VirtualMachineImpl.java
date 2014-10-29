@@ -1,3 +1,4 @@
+package exampleOfUsage;
 ///*      */ 
 ///*      */ 
 ///*      */ import com.sun.jdi.BooleanType;

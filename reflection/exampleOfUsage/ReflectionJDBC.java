@@ -1,3 +1,4 @@
+package exampleOfUsage;
 public class ReflectionJDBC
 {
 
