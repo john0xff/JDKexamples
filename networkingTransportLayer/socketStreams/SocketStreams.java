@@ -19,8 +19,7 @@ public class SocketStreams
 	 *            the start offset in the data
 	 * @param len
 	 *            the number of bytes that are written
-	 * @exception IOException
-	 *                If an I/O error has occurred.
+	 * @exception IOException If an I/O error has occurred.
 	 */
 	private native void socketWrite0(FileDescriptor fd, byte[] b, int off, int len) throws IOException;
 
