@@ -1,4 +1,4 @@
-package pointerReading2;
+package pointerReading3;
 
 import java.io.DataInputStream;
 import java.io.File;
@@ -13,7 +13,7 @@ public class PointerReading
 	// from 1 to 10 (block of data)
 	public static void main(String[] args)
 	{
-		File file = new File("streams/pointerReading2/reader.txt");
+		File file = new File("streams/pointerReading3/reader.txt");
 
 		FileInputStream fileInputStream = null;
 		try
@@ -41,10 +41,10 @@ public class PointerReading
 			}
 
 			// print ASCII
-			for (int i = 0; i < size; i++)
-			{
-				System.out.println((char) byteBuffer[i]);
-			}
+//			for (int i = 0; i < size; i++)
+//			{
+//				System.out.println((char) byteBuffer[i]);
+//			}
 			
 			char[] charBuffer = new char[bufferSize];
 			
