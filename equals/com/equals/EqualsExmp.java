@@ -16,13 +16,15 @@ public class EqualsExmp
 
 	public static void main(String[] args)
 	{
-		equalsString();
-		equalsString2();
+//		equalsString();
+//		equalsString2();
 
 		// equalsInteger();
 		// equalsInteger2();
 
 		// equalsArrayList();
+		
+		equalsNull();
 	}
 
 	private static void equalsString()
@@ -104,6 +106,25 @@ public class EqualsExmp
 			System.out.println("list1 != list2"); // here we feel the difference
 
 		if (list1.equals(list2))
+			System.out.println("list1 equals list2");
+		else
+			System.out.println("list1 !equals list2");
+	}
+
+	private static void equalsNull()
+	{
+		ArrayList<String> list1 = null;
+
+		ArrayList<String> list2 = null;
+
+		// list2 = list1; assign the reference - after this list1 == list2
+
+		if (list1 == list2)
+			System.out.println("list1 == list2");
+		else
+			System.out.println("list1 != list2");
+
+		if (list1.equals(list2)) // java.lang.NullPointerException
 			System.out.println("list1 equals list2");
 		else
 			System.out.println("list1 !equals list2");
