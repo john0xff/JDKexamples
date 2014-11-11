@@ -21,7 +21,8 @@ public class Client
 		
 		try
 		{
-			this.socket = new Socket("127.0.0.1", 9002);
+			// this.socket = new Socket("127.0.0.1", 9002);
+			this.socket = new Socket("phoenixjcam.no-ip.biz", 9002);
 
 			this.objectOutputStream = new ObjectOutputStream(this.socket.getOutputStream());
 			this.objectInputStream = new ObjectInputStream(this.socket.getInputStream());

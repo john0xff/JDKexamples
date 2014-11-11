@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="uncommit"/>
+	<classpathentry kind="src" path="drafts"/>
 	<classpathentry kind="src" path="gui-AWT-SWING"/>
 	<classpathentry kind="src" path="jvm"/>
 	<classpathentry kind="src" path="dataProcessing"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="bitwise"/>
-	<classpathentry kind="src" path="sql"/>
 	<classpathentry kind="src" path="regex"/>
 	<classpathentry kind="src" path="keywords"/>
 	<classpathentry kind="src" path="reflection"/>
