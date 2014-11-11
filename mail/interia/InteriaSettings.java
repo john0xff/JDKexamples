@@ -1,4 +1,6 @@
 
+package interia;
+
 
 import java.util.Properties;
 
