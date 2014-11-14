@@ -1,12 +1,13 @@
 package URLs;
 
 import java.net.URL;
+import java.util.ArrayList;
 
 public class ParseURL
 {
 	public static void main(String[] args) throws Exception
 	{
-
+		
 		URL aURL = new URL("http://example.com:80/docs/books/tutorial" + "/index.html?name=networking#DOWNLOADING");
 
 		System.out.println("protocol = " + aURL.getProtocol());
