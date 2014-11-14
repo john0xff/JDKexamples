@@ -3,7 +3,7 @@ package tomcat.client.url;
 import java.net.*;
 import java.io.*;
 
-public class ApacheGetHTMLwithSocket
+public class TomcatGetResource
 {
 
 	@SuppressWarnings("resource")
@@ -14,7 +14,7 @@ public class ApacheGetHTMLwithSocket
 
 		try
 		{
-			URL u = new URL("http://phoenixjcam.no-ip.biz/index.html");
+			URL u = new URL("http://phoenixjcam.no-ip.biz:8081/tests/tomcat.html");
 
 			if (u.getPort() != -1)
 				port = u.getPort();
@@ -26,7 +26,9 @@ public class ApacheGetHTMLwithSocket
 			}
 
 			Socket s = new Socket(u.getHost(), port);
+			
 			OutputStream theOutput = s.getOutputStream();
+			
 			// no auto-flushing
 			PrintWriter pw = new PrintWriter(theOutput, false);
 			// native line endings are uncertain so add them manually
@@ -34,6 +36,7 @@ public class ApacheGetHTMLwithSocket
 			pw.print("Accept: text/plain, text/html, text/*\r\n");
 			pw.print("\r\n");
 			pw.flush();
+			
 			InputStream in = s.getInputStream();
 			InputStreamReader isr = new InputStreamReader(in);
 			BufferedReader br = new BufferedReader(isr);
@@ -43,7 +46,7 @@ public class ApacheGetHTMLwithSocket
 			// System.out.print((char) c);
 			// }
 			
-			File file = new File("networkingTransportLayer/apache/client/url/index.html");
+			File file = new File("networkingTransportLayer/tomcat/client/url/tomcat.html");
 
 			BufferedWriter bufferedWriter;
 
