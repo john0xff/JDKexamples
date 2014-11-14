@@ -15,7 +15,7 @@ import java.net.Socket;
  * 
  * Port set in router NAT (9002) to local server on public IP (DDSN) with domain registered on no-ip service. 
  * To connect (server needs to run before request from browser ;)  )
- * http://phoenixjcam.no-ip.biz:9002 
+ * http://phoenixjcam.no-ip.biz:9002
  * 
  * @author bart400
  *
