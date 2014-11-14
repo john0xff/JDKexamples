@@ -1,0 +1,29 @@
+UsingTheTerminal – Ubuntu
+https://help.ubuntu.com/community/UsingTheTerminal
+
+sudo -i nautilus (sudo gui permission program)
+sudo netstat -taupen
+sudo /opt/lampp/lampp start (run xmapp on ubuntu lampp it’s file with bash script)
+
+bash /.sh
+./fileName.sh (run)
+-> start of content
+#!/bin/bash
+sudo opt/lampp/lampp start;
+-> end of content
+
+If it’s tar.gz use tar xvzf PACKAGENAME.tar.gz
+if it’s a tar.bz2 use tar xvjf PACKAGENAME.tar.bz2
+
+ports:
+sudo netstat -taupen
+sudo netstat -tapen | grep ":8"
+sudo netstat -tapen | grep ":8000"
+
+annoying menu bar (14.04):
+sudo apt-get remove indicator-appmenu
+gsettings set com.canonical.Unity integrated-menus true
+gsettings set com.canonical.Unity integrated-menus false
+
+sudo apt-get remove appmenu-gtk indicator-applet-appmenu indicator-appmenu (Ubuntu 11.04 and 11.10:)
+sudo apt-get remove appmenu-gtk appmenu-gtk3 appmenu-qt indicator-appmenu (12.04)
