@@ -1,4 +1,4 @@
-package apache.client.url;
+package allegro.msg;
 
 import java.net.*;
 import java.io.*;
@@ -14,14 +14,14 @@ public class ApacheGetHTMLwithSocket
 
 		try
 		{
-			URL u = new URL("http://phoenixjcam.no-ip.biz/index.html");
+			URL u = new URL("http://allegro.pl/index.php");
 
 			if (u.getPort() != -1)
 				port = u.getPort();
 
 			if (!(u.getProtocol().equalsIgnoreCase("http")))
 			{
-				System.err.println("Sorry. I only understand http.");
+				System.err.println("something else then http");
 
 			}
 
@@ -43,12 +43,12 @@ public class ApacheGetHTMLwithSocket
 			// System.out.print((char) c);
 			// }
 			
-			File file = new File("networkingTransportLayer/apache/client/url/index.html");
+			File file = new File("networkingTransportLayer/apache/client/url2/index.html");
 
 			BufferedWriter bufferedWriter;
 
 			bufferedWriter = new BufferedWriter(new FileWriter(file));
-
+	
 			String line;
 			while ((line = br.readLine()) != null)
 			{

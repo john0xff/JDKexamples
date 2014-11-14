@@ -1,4 +1,4 @@
-package apache.client.url;
+package apache.client.url.api;
 
 import java.io.BufferedReader;
 import java.io.IOException;
