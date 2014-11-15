@@ -27,3 +27,15 @@ gsettings set com.canonical.Unity integrated-menus false
 
 sudo apt-get remove appmenu-gtk indicator-applet-appmenu indicator-appmenu (Ubuntu 11.04 and 11.10:)
 sudo apt-get remove appmenu-gtk appmenu-gtk3 appmenu-qt indicator-appmenu (12.04)
+
+------------------------------------------------------PHP chat server 
+run - php chat server with websocket (on windows make sure about environment variable)
+It run server websockt listener on pointed port
+php -q /opt/lampp/htdocs/chat-websocket/server.php
+--------------------------------------------------------------------------------------------------
+
+
+
+
+
+
