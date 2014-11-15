@@ -34,9 +34,11 @@ public class ApacheGetHTMLwithSocket
 			pw.print("Accept: text/plain, text/html, text/*\r\n");
 			pw.print("\r\n");
 			pw.flush();
+			
 			InputStream in = s.getInputStream();
 			InputStreamReader isr = new InputStreamReader(in);
 			BufferedReader br = new BufferedReader(isr);
+			
 			// int c;
 			// while ((c = br.read()) != -1)
 			// {

@@ -13,7 +13,7 @@
 	<classpathentry kind="src" path="exception"/>
 	<classpathentry kind="src" path="nestedClasses"/>
 	<classpathentry kind="src" path="inheritance"/>
-	<classpathentry kind="src" path="networkingTransportLayer"/>
+	<classpathentry kind="src" path="networkingSockets"/>
 	<classpathentry kind="src" path="operators"/>
 	<classpathentry kind="src" path="hashCode"/>
 	<classpathentry kind="src" path="buffered"/>
