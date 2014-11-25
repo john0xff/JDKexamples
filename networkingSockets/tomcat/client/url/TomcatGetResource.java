@@ -46,7 +46,7 @@ public class TomcatGetResource
 			// System.out.print((char) c);
 			// }
 			
-			File file = new File("networkingTransportLayer/tomcat/client/url/tomcat.html");
+			File file = new File("networkingSockets/tomcat/client/url/tomcat2.html");
 
 			BufferedWriter bufferedWriter;
 
