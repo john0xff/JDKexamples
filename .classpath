@@ -1,42 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="drafts"/>
-	<classpathentry kind="src" path="gui-AWT-SWING"/>
-	<classpathentry kind="src" path="jvm"/>
-	<classpathentry kind="src" path="dataProcessing"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="src" path="bitwise"/>
-	<classpathentry kind="src" path="regex"/>
-	<classpathentry kind="src" path="keywords"/>
-	<classpathentry kind="src" path="reflection"/>
-	<classpathentry kind="src" path="reference"/>
-	<classpathentry kind="src" path="exception"/>
-	<classpathentry kind="src" path="nestedClasses"/>
-	<classpathentry kind="src" path="inheritance"/>
-	<classpathentry kind="src" path="networkingSockets"/>
-	<classpathentry kind="src" path="operators"/>
-	<classpathentry kind="src" path="hashCode"/>
-	<classpathentry kind="src" path="buffered"/>
-	<classpathentry kind="src" path="NIO"/>
-	<classpathentry kind="src" path="interfaces"/>
-	<classpathentry kind="src" path="fileSystems"/>
-	<classpathentry kind="src" path="equals"/>
-	<classpathentry kind="src" path="mail"/>
-	<classpathentry kind="src" path="bash"/>
-	<classpathentry kind="src" path="TomcatImpl"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="src" path="concurrency"/>
-	<classpathentry kind="src" path="streams"/>
-	<classpathentry kind="src" path="string"/>
-	<classpathentry kind="src" path="base64"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
