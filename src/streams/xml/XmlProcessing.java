@@ -8,6 +8,9 @@ import java.io.InputStream;
 import javax.xml.bind.JAXBContext;
 
 /**
+ * 
+ * https://docs.oracle.com/javase/7/docs/api/javax/xml/bind/Marshaller.html
+ * 
  * <pre>
  * http://www.programcreek.com/java-api-examples/index.php?api=javax.xml.transform.stream.StreamSource
  * 
@@ -20,19 +23,17 @@ import javax.xml.bind.JAXBContext;
 public class XmlProcessing
 {
 	javax.xml.transform.stream.StreamSource streamSource;
-	
-	//JAXBContext 
-	
-	
+
+	// JAXBContext
+
 	public XmlProcessing()
 	{
 		File file = new File("somePath to file");
-		
+
 		try
 		{
 			FileInputStream fis = new FileInputStream(file);
-			
-			
+
 		}
 		catch (FileNotFoundException e)
 		{
@@ -42,16 +43,16 @@ public class XmlProcessing
 	}
 }
 
-///** 
-// * Unmarshalls the XML encoded message in the  {@link TextMessage} to anObject
+// /**
+// * Unmarshalls the XML encoded message in the {@link TextMessage} to anObject
 // */
-//protected Object unmarshall(Session session,TextMessage textMessage) throws JMSException {
-//  try {
-//    String text=textMessage.getText();
-//    Source source=new StreamSource(new StringReader(text));
-//    return marshaller.unmarshal(source);
-//  }
-// catch (  Exception e) {
-//    throw new JMSException(e.getMessage());
-//  }
-//}
+// protected Object unmarshall(Session session,TextMessage textMessage) throws JMSException {
+// try {
+// String text=textMessage.getText();
+// Source source=new StreamSource(new StringReader(text));
+// return marshaller.unmarshal(source);
+// }
+// catch ( Exception e) {
+// throw new JMSException(e.getMessage());
+// }
+// }
