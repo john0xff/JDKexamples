@@ -1,3 +1,5 @@
+package networking.sockets.demoty;
+
 import java.net.*;
 import java.io.*;
 
@@ -5,14 +7,15 @@ import java.io.*;
 // Allegro:          X-Job-Offer: Szukamy programistow, ktorzy zagladaja w takie miejsca. Wyslij do nas CV na adres generalist(at)allegro.pl, na pewno sie odezwiemy.
 // Demotywatory:    <meta name="job-offer" content="Robisz w PHP, znasz MySQL, tworzysz UI z pomocą JS, szukasz pracy? Może właśnie ją znalazłeś! Ślij CV na praca@mmg.pl" />
 
-public class Main {
+public class MainDemo
+{
 
     public static void main(String[] args) {
 
         getAllegroURLConnectionToFile();
     }
 
-    public static void getURLConnection(){
+    public static void getURLConnection2(){
         try {
             URL hh = new URL("http://demotywatory.pl");
             URLConnection connection = hh.openConnection();
@@ -196,6 +199,48 @@ public class Main {
         catch (IOException ex)
         {
             System.err.println(ex);
+        }
+    }
+
+    public static void getURLConnection(){
+        try {
+            URL hh = new URL("http://demotywatory.pl");
+            URLConnection connection = hh.openConnection();
+            String redirect = connection.getHeaderField("Location");
+            if (redirect != null) {
+                connection = new URL(redirect).openConnection();
+            }
+
+            BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+            String inputLine;
+            System.out.println();
+
+            boolean body = false;
+
+            while ((inputLine = in.readLine()) != null && body == false) {
+                System.out.println(inputLine);
+
+                String[] words = inputLine.split(" ");
+
+                int wordsLength = words.length;
+
+                for(int i = 0; i < wordsLength; i++)
+                {
+                    if(words[i].equals("<body"))
+                    {
+                        System.out.println("body found");
+                        body = true;
+                        break;
+                    }
+
+                    //System.out.println(words[i]);
+                }
+
+                //System.out.println("----------------------");
+            }
+        }catch(Exception e)
+        {
+            e.printStackTrace();
         }
     }
 
